@@ -29,6 +29,12 @@ namespace SampleWebApi.Controllers
             return Ok(DoGetHostAddresses());
         }
 
+        [HttpPost("post")]
+        public IActionResult Post()
+        {
+            return Ok("OK");
+        }
+
         public string DisplayLocalHostName()
         {
             try
